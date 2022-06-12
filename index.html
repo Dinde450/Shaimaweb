@@ -75,4 +75,38 @@ div {text-align: center;}
 	<p>Maintenant vous pouvez jouer le Diabloicours, l'Ilithid (flageleur mental) et le renard de bibliotheque</p>
 	<p>Aussi vous avez acces aux sort lycantropie magique, projectille tereux et bouclier de terre magique</p>
 <h1>________________________</h1>
+	
+	<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>Login page</title>
+</head>
+<body>
+<form>
+    <label for="pswd">Enter your password: </label>
+    <input type="password" id="pswd">
+    <input type="button" value="Submit" onclick="checkPswd();" />
+</form>
+<!--Function to check password the already set password is admin-->
+<script type="text/javascript">
+    function checkPswd() {
+        var confirmPassword = "RouleBoule123";
+        var password = document.getElementById("pswd").value;
+        if (password == confirmPassword) {
+             window.location="welcome.html";
+        }
+        else{
+            alert("Passwords do not match.");
+        }
+    }
+</script>
+</body>
+</html>
+    
+  </body>
+</html>
 
